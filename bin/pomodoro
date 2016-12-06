@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Resolve script path even if this script is symlinked
+SCRIPT_PATH="$(readlink "$0")"
+if [[ $? -gt 0 ]]; then
+  SCRIPT_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
+else
+  SCRIPT_PATH="$( dirname "$SCRIPT_PATH" )"
+fi
+
+NODE_SCRIPT_PATH="$SCRIPT_PATH/../index.js"
+
+# Run and fork
+node "$NODE_SCRIPT_PATH" $1 & 
+
