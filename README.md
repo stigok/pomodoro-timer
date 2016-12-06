@@ -26,3 +26,5 @@ Default timer set to 25 minutes
 
 Tested on Arch Linux with `libnotify` and `notify-osd`. Maybe it works on macOS too?
 
+If you want to contribute; contribute! <3
+
