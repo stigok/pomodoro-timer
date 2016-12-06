@@ -1,0 +1,29 @@
+{
+  "name": "pomodoro-timer",
+  "version": "0.0.1",
+  "description": "Pomodoro timer with libnotify notifications",
+  "main": "index.js",
+  "bin": {
+    "pomodoro": "bin/pomodoro",
+    "pomodoro-timer": "index.js"
+  },
+  "scripts": {
+    "test": "notify-send --version && echo 'Dependency test success!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stigok/pomodoro-timer.git"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "libnotify",
+    "notify-send"
+  ],
+  "author": "stigok",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/stigok/pomodoro-timer/issues"
+  },
+  "homepage": "https://github.com/stigok/pomodoro-timer#readme"
+}
