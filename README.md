@@ -6,21 +6,19 @@
 
 ## Install
 
-    # Verify you have dependencies installed
-    $: node --version
-    $: notify-send --version
-    $: notify-send "Test" "I should see this message on my screen somewhere"
+    $: git clone https://github.com/stigok/pomodoro-timer
+    $: cd pomodoro-timer
+    $: npm i -g .
 
-    # Clone repo to desired location
-    $: git clone https://github.com/stigok/pomodoro-timer ~/repos/pomodoro-timer
-
-    # cd to a directory within your $PATH and symlink the script there
-    $: cd ~/bin
-    $: ln -s ~/repos/pomodoro-timer/bin/pomodoro pomodoro
+Not published to official npm repo because another project already exists as `pomodoro-timer` (which is probably [worth checking out as well](https://github.com/niftylettuce/pomodoro-timer)).
 
 ## Usage
 
+    # Runs in background
     $: pomodoro [minutes]
+
+    # Blocking version
+    $: pomodoro-timer [minutes]
 
 Default timer set to 25 minutes
 
