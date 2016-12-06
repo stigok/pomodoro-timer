@@ -16,10 +16,15 @@
 
     # cd to a directory within your $PATH and symlink the script there
     $: cd ~/bin
-    $: ln -s ~/repos/pomodoro-timer/index.js pomodoro
+    $: ln -s ~/repos/pomodoro-timer/bin/pomodoro pomodoro
 
 ## Usage
 
-    pomodoro [minutes]
+    $: pomodoro [minutes]
 
 Default timer set to 25 minutes
+
+## Notes
+
+Tested on Arch Linux with `libnotify` and `notify-osd`. Maybe it works on macOS too?
+
