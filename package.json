@@ -1,6 +1,6 @@
 {
   "name": "pomodoro-timer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple pomodoro timer with libnotify notifications",
   "bin": {
     "pomodoro": "bin/pomodoro",
