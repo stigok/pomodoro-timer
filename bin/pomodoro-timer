@@ -4,7 +4,10 @@ const exec = require('child_process').exec
 
 const args = process.argv.splice(2)
 const minutes = Number(args[0]) || 25
-const message = `${minutes} minutes of focused work just flew by!`
+const messages = {
+  started: `Focus on this specific task for ${minutes} minutes, bro`,
+  finished: `${minutes} minutes of focused work just flew by!`
+}
 
 // Verify argument
 if (Number.isNaN(minutes) || minutes < 0) {
@@ -20,9 +23,9 @@ function execCallback(err, res) {
 }
 
 // Notify of start
-exec(`notify-send --urgency=low -a "pomodoro" "Timer set!" "Focus on this specific task for ${minutes} minutes, bro"`)
+exec(`notify-send --urgency=low -a "pomodoro" "Timer set!" "${messages.started}"`, execCallback)
 
 // Set timer
 setTimeout(function () {
-  exec(`notify-send --urgency=critical -a "pomodoro" "Time is up!" "${message}"`, execCallback)
+  exec(`notify-send --urgency=critical -a "pomodoro" "Time is up!" "${messages.finished}"`, execCallback)
 }, minutes * 60 * 1000)

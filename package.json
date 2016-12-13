@@ -1,11 +1,11 @@
 {
   "name": "pomodoro-timer",
-  "version": "0.0.1",
-  "description": "Pomodoro timer with libnotify notifications",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "Simple pomodoro timer with libnotify notifications",
+  "private": true,
   "bin": {
     "pomodoro": "bin/pomodoro",
-    "pomodoro-timer": "index.js"
+    "pomodoro-timer": "bin/pomodoro-timer"
   },
   "scripts": {
     "test": "notify-send --version && echo 'Dependency test success!'"
