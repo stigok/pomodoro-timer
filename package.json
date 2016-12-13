@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": {
     "pomodoro": "bin/pomodoro",
-    "pomodoro-timer": "index.js"
+    "pomodoro-timer": "bin/pomodoro-timer"
   },
   "scripts": {
     "test": "notify-send --version && echo 'Dependency test success!'"
