@@ -23,7 +23,7 @@ function execCallback(err, res) {
 }
 
 // Notify of start
-exec(`notify-send --urgency=low -a "pomodoro" "Timer set!" "${messages.started}"`)
+exec(`notify-send --urgency=low -a "pomodoro" "Timer set!" "${messages.started}"`, execCallback)
 
 // Set timer
 setTimeout(function () {
